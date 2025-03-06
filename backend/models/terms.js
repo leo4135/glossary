@@ -6,14 +6,12 @@ const querySync = promisify(connection.query).bind(connection);
 export async function getTerms(req, res) {
     try {
         const page = req.query.page;
-
             const limit = 10;
             const offset = (page - 1) * 10;
             const resultTerms = page ? await querySync(`SELECT *
              FROM nodes
               LIMIT ? OFFSET ?;`, [limit, offset]) : await querySync(`SELECT *
                 FROM nodes;`);
-                console.log(resultTerms)
             const totalTerms = await querySync(`SELECT COUNT(*)
                 FROM nodes;`);
                 const resultEdges = await querySync(`SELECT *
