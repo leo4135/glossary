@@ -10,8 +10,7 @@ services:
       MYSQL_DATABASE: glossary
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # прямое подключение
-      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql  # ваших файлов
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql 
     ports:
       - "3306:3306"
     healthcheck:
