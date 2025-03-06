@@ -1,0 +1,32 @@
+# Glossary Frontend
+
+Веб-интерфейс для работы с глоссарием терминов. Часть выпускной квалификационной работы.
+
+[![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+
+
+## Особенности
+- Просмотр терминов в виде интерактивного списка
+- Поиск по названию и описанию
+- Семантический граф взаимосвязей
+- Адаптивный дизайн
+
+## Технологии
+- **Vue 3** - ядро приложения
+- **Vue Router** - навигация между страницами
+- **Pinia** - управление состоянием
+
+## Быстрый старт
+
+### Требования
+- Node.js 18+
+- npm 9+ или yarn 1.22+
+- Docker (опционально)
+
+### Установка
+```bash
+git clone https://github.com/leo4135/glossary.git
+cd glossary/frontend
+npm install
