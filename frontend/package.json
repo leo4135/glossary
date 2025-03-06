@@ -1,0 +1,30 @@
+{
+  "name": "glossary",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "cytoscape": "^3.31.1",
+    "dotenv": "^16.4.5",
+    "pinia": "^2.1.7",
+    "v-network-graph": "^0.9.20",
+    "vue": "^3.4.21",
+    "vue-i18n": "^9.14.2",
+    "vue-router": "^4.3.2",
+    "vue3-carousel": "^0.3.3",
+    "vuetify": "^3.7.12",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
